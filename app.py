@@ -106,7 +106,7 @@ def sendsms(message):
 	auth_token = config.get('DEFAULT', 'twilio_auth_token')
 	to_phone = config.get('DEFAULT', 'twilio_to_phone')
 	from_phone = config.get('DEFAULT', 'twilio_from_phone')
-	
+
 	client = TwilioRestClient(account_sid, auth_token)
 	print("Sending this notification as SMS")
 	message = client.messages.create(body=message,to=to_phone,from_=from_phone)
@@ -142,7 +142,6 @@ def show_notifications(notifs):
 	"""
 	total_notif = len(notifs)
 	file_notifs = read_notifications_from_file()
-	total_file_notifs = len(file_notifs)
 
 	has_new_notif = False
 	if total_notif > 0:
@@ -166,7 +165,7 @@ def show_notifications(notifs):
 			print("Total notifications (%d)" % total_notif)
 		else:
 			print("No new notifications")
-	
+
 	print("Last updated at: %s\n" % time.ctime())
 
 # read configuration from the config file
