@@ -24,9 +24,16 @@ The script checks the notifications every 30 seconds.
 12. Substitute the values of **to_phone** and **from_phone** with your verified phone number
 
 ## Installation
-You must have **Python 3** installed.
+Remember, you must have **python3** and **pip3** installed.
+```
+$ git clone https://github.com/sandipbgt/twilio-fb-notification
+$ cd twilio-fb-notification
+$ virtualenv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ python app.py
+```
 
-Install modules from requirements.txt file
 
 ## How to run
 From your terminal type `python3 app.py` or `python app.py` depending upon how your install python on your system
