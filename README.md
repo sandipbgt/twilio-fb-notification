@@ -26,7 +26,7 @@ The script checks the notifications every 30 seconds.
 ## Installation
 Remember, you must have **python3** and **pip3** installed.
 ```
-$ git clone https://github.com/sandipbgt/twilio-fb-notification
+$ git clone https://github.com/sandipbgt/twilio-fb-notification.git
 $ cd twilio-fb-notification
 $ virtualenv venv
 $ source venv/bin/activate
@@ -36,4 +36,4 @@ $ python app.py
 
 
 ## How to run
-From your terminal type `python3 app.py` or `python app.py` depending upon how your install python on your system
+From your terminal type `python3 app.py` or `python app.py` depending upon how you have installed python on your system
